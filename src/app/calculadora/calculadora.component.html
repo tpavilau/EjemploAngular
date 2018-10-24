@@ -1,0 +1,35 @@
+<div style="text-align:center; float:middle;">
+  Valor Completo: {{ calculadora.completo}}<br>
+  Valor numero: {{ calculadora.numero}}<br>
+  Valor resultado: {{ calculadora.resultado}}<br>
+  Valor operacion: {{ calculadora.operacion}}<br>
+  <table border="1">
+    <tbody>
+      <tr>
+        <td colspan="4"><input [(ngModel)]="calculadora.completo" placeholder="Ingrese número"/></td>
+      </tr>
+      <tr>
+        <td> <button type="button" name="uno" (click)="setNumero(1)"> 1 </button> </td>
+        <td> <button type="button" name="uno" (click)="setNumero(2)"> 2 </button> </td>
+        <td> <button type="button" name="uno" (click)="setNumero(3)"> 3 </button> </td>
+        <td> <button type="button" name="suma"> + </button> </td>
+      </tr>
+      <tr>
+        <td> <button type="button" name="uno" (click)="setNumero(4)"> 4 </button> </td>
+        <td> <button type="button" name="uno" (click)="setNumero(5)"> 5 </button> </td>
+        <td> <button type="button" name="uno" (click)="setNumero(6)"> 6 </button> </td>
+        <td> <button type="button" name="resta"> - </button> </td>
+      </tr>
+      <tr>
+        <td> <button type="button" name="uno" (click)="setNumero(7)"> 7 </button> </td>
+        <td> <button type="button" name="uno" (click)="setNumero(8)"> 8 </button> </td>
+        <td> <button type="button" name="uno" (click)="setNumero(9)"> 9 </button> </td>
+        <td> <button type="button" name="multiplicacion" > * </button> </td>
+      </tr>
+      <tr>
+        <td colspan="3"> <button type="button" name="uno" style="width: 100%"> 0 </button> </td>
+        <td> <button type="button" name="uno"> / </button> </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
